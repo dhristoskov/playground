@@ -1,16 +1,12 @@
 <template>
     <div>
-        <Header />
+        <p>Home Page</p>
     </div>
 </template>
 
 <script>
-import Header from '../shared-components/Header/MainHeader'
 
 export default {
-  components: {
-    Header
-  }
 }
 </script>
 

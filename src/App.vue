@@ -1,15 +1,16 @@
 <template>
     <div>
-        <home />
+        <Header />
+        <router-view/>
     </div>
 </template>
 
 <script>
-import Home from './views/Home'
+import Header from './shared-components/Header/MainHeader'
 
 export default {
   components: {
-    Home
+    Header
   }
 }
 </script>

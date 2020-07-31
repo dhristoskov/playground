@@ -17,6 +17,8 @@
             text-transform: uppercase;
             font-size: 14px;
             cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover,
             &.active,
             &.exact-active{
                 color: chartreuse;
