@@ -1,7 +1,7 @@
 <template>
     <nav>
-        <router-link to='/' tag='li'>Home</router-link>
-        <router-link to='/' tag='li'>Something</router-link>
+        <router-link exact to='/' tag='li'>Home</router-link>
+        <router-link to='/something' tag='li'>Something</router-link>
         <router-link to='/account' tag='li'>Account</router-link>
         <router-link to='/login' tag='li'>Login</router-link>
     </nav>
@@ -17,6 +17,10 @@
             text-transform: uppercase;
             font-size: 14px;
             cursor: pointer;
+            &.active,
+            &.exact-active{
+                color: chartreuse;
+            }
         }
     }
     @media screen and (max-width: 420px) {

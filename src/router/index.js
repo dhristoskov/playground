@@ -10,7 +10,10 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  routes
+  routes,
+  //  Change default active and exact-active class names
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'exact-active'
 })
 
 export default router
