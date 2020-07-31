@@ -1,6 +1,6 @@
 <template>
     <section class='header'>
-        <router-link to='/' tag='p'>Logo</router-link>
+        <router-link class="logo" to='/' tag='p'>Logo</router-link>
         <Navigation />
         <Hamburger />
     </section>
@@ -29,9 +29,7 @@ export default {
             cursor: pointer;
         }
     }
-    @media screen and (max-width: 420px) {
-        .header{
-            justify-content: center;
-        }
-    }
+    //To be changed later !!!!
+    /* @media screen and (max-width: 420px) {
+    } */
 </style>

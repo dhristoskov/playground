@@ -1,19 +1,15 @@
 <template>
     <div>
-        <Header />
         <home />
     </div>
 </template>
 
 <script>
-
 import Home from './views/Home'
-import Header from './shared-components/Header/MainHeader'
 
 export default {
   components: {
-    Home,
-    Header
+    Home
   }
 }
 </script>
