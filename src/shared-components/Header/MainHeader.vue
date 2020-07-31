@@ -1,0 +1,11 @@
+<template>
+    <section>
+        <p>Logo</p>
+        <nav>
+            <li>Home</li>
+            <li>Something</li>
+            <li>Account</li>
+            <li>Login</li>
+        </nav>
+    </section>
+</template>
