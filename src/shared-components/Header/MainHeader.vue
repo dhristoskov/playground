@@ -1,14 +1,22 @@
 <template>
     <section class='header'>
         <router-link to='/' tag='p'>Logo</router-link>
-        <nav>
-            <router-link to='/' tag='li'>Home</router-link>
-            <router-link to='/' tag='li'>Something</router-link>
-            <router-link to='/account' tag='li'>Account</router-link>
-            <router-link to='/login' tag='li'>Login</router-link>
-        </nav>
+        <Navigation />
+        <Hamburger />
     </section>
 </template>
+
+<script>
+import Navigation from './Navigation'
+import Hamburger from './Hamburger'
+
+export default {
+  components: {
+    Navigation,
+    Hamburger
+  }
+}
+</script>
 
 <style lang="scss" scoped>
     .header {
@@ -16,19 +24,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 2px solid black;
         p{
             cursor: pointer;
         }
-        nav {
-            display: flex;
-            width: 30%;
-            justify-content: space-between;
-            li {
-                list-style: none;
-                text-transform: uppercase;
-                font-size: 14px;
-                cursor: pointer;
-            }
+    }
+    @media screen and (max-width: 420px) {
+        .header{
+            justify-content: center;
         }
     }
 </style>
