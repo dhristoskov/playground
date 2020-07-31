@@ -1,3 +1,4 @@
+//Backdrop for the Modal Pop-up
 <template>
     <div class="backdrop"  @click='hideModal'>
     </div>
