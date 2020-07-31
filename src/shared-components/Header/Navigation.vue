@@ -7,6 +7,12 @@
     </nav>
 </template>
 
+<script>
+export default {
+  //  ToDo
+}
+</script>
+
 <style lang="scss" scoped>
     nav {
         display: flex;
