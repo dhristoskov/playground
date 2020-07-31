@@ -1,8 +1,20 @@
 <template>
-  <div>
-    <p>Hello Vue</p>
-  </div>
+    <div>
+        <p>Hello Vue</p>
+        <home />
+    </div>
 </template>
+
+<script>
+
+import Home from './views/Home'
+
+export default {
+  components: {
+    Home
+  }
+}
+</script>
 
 <style lang="scss">
  * {
