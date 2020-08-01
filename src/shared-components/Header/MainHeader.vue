@@ -1,6 +1,6 @@
 <template>
     <section class='header'>
-        <router-link class="logo" to='/' tag='p'>Logo</router-link>
+        <router-link to='/' tag='div'><Logo /></router-link>
         <Navigation />
         <Hamburger />
     </section>
@@ -9,22 +9,23 @@
 <script>
 import Navigation from './Navigation'
 import Hamburger from './Hamburger'
+import Logo from './Logo'
 
 export default {
   components: {
     Navigation,
-    Hamburger
+    Hamburger,
+    Logo
   }
 }
 </script>
 
 <style lang="scss" scoped>
     .header {
-        padding: 25px 45px;
+        padding: 20px 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px solid black;
         p{
             cursor: pointer;
         }

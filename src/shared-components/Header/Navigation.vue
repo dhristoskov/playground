@@ -21,13 +21,13 @@ export default {
         li {
             list-style: none;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 13px;
             cursor: pointer;
             transition: all .3s ease-in-out;
             &:hover,
             &.active,
             &.exact-active{
-                color: chartreuse;
+                color: #10C1E5;
             }
         }
     }

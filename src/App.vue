@@ -18,6 +18,9 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+$base-color: #172727;
+$base-text-color: #E9ECEB;
+
  * {
     padding: 0;
     margin: 0;
@@ -26,6 +29,8 @@ export default {
   html {
     box-sizing: border-box;
     font-family: 'Play', sans-serif;
+    background-color: $base-color;
+    color: $base-text-color;
   }
 
   *, *::before, *::after {
