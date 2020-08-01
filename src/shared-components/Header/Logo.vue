@@ -18,6 +18,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
         .title {
             margin-top: 5px;
             font-size: 10px;
@@ -31,7 +32,7 @@
             .stroke {
                 display: block;
                 position: relative;
-                background: #10C1E5;
+                background: #FDFF85;
                 height: 100%;
                 width: 6px;
                 border-radius: 50px;

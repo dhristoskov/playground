@@ -26,11 +26,8 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        p{
+        p {
             cursor: pointer;
         }
     }
-    //To be changed later !!!!
-    /* @media screen and (max-width: 420px) {
-    } */
 </style>
