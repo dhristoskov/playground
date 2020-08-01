@@ -2,19 +2,16 @@
     <section class='header'>
         <router-link to='/' tag='div'><Logo /></router-link>
         <Navigation />
-        <Hamburger />
     </section>
 </template>
 
 <script>
 import Navigation from './Navigation'
-import Hamburger from './Hamburger'
 import Logo from './Logo'
 
 export default {
   components: {
     Navigation,
-    Hamburger,
     Logo
   }
 }
@@ -28,6 +25,12 @@ export default {
         align-items: center;
         p {
             cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .header {
+            justify-content: center;
         }
     }
 </style>
