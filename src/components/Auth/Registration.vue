@@ -114,6 +114,11 @@ $base-border-color: #E9ECEB;
                 letter-spacing: 3px;
                 font-weight: 700;
                 border-radius: 30px;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: $base-text-color;
+                    color: #172727;
+                }
             }
         }
     }

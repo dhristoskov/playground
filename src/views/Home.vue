@@ -1,16 +1,16 @@
 <template>
     <div>
         <p>Home Page</p>
-        <Login />
+        <Check />
     </div>
 </template>
 
 <script>
-import Login from '../components/Auth/Login'
+import Check from '../components/Auth/CheckEmail'
 
 export default {
   components: {
-    Login
+    Check
   }
 }
 </script>
