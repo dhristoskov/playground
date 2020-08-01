@@ -2,15 +2,64 @@
     <div class="auth-container">
         <h5 class="auth-title">Registration</h5>
         <p class="subtitle">create an account</p>
-        <form class="auth-form">
-            <input type='text' id="name" name='name' placeholder='Name' />
-            <input type='email' id="email" name='email' placeholder='E-mail' />
-            <input type='password' id="password" name='password' placeholder='Password'  />
-            <input type='password' id="password2" name='password2' placeholder='Confirm Password' />
+        <form class="auth-form" @submit.prevent="onSubmitHandler">
+            <input type='text' id="name" name='name' placeholder='Name'
+            v-model="user.name" required/>
+            <input type='email' id="email" name='email' placeholder='E-mail'
+            v-model="user.email" required/>
+            <input type='password' id="password" name='password' placeholder='Password'
+            v-model="user.password" required/>
+            <input type='password' id="password2" name='password2' placeholder='Confirm Password'
+            v-model="user.password2" required/>
             <input type='submit' value="submit"/>
         </form>
     </div>
 </template>
+
+<script>
+import { validationMixin } from 'vuelidate'
+import { required, minLength, email, sameAs } from 'vuelidate/lib/validators'
+
+export default {
+  mixins: [validationMixin],
+  data () {
+    return {
+      user: {
+        name: '',
+        email: '',
+        password: '',
+        password2: ''
+      }
+    }
+  },
+  methods: {
+    onSubmitHandler (e) {
+      console.log(this.user)
+      e.target.reset()
+    }
+  },
+  validations: {
+    user: {
+      name: {
+        required,
+        minLength: minLength(2)
+      },
+      email: {
+        required,
+        email
+      },
+      password: {
+        required,
+        minLength: minLength(6)
+      },
+      password2: {
+        required,
+        samePassword: sameAs('password')
+      }
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 $base-text-color: #FDFF85;
