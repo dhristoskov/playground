@@ -5,12 +5,20 @@
         <form class="auth-form" @submit.prevent="onSubmitHandler">
             <input type='text' id="name" name='name' placeholder='Name'
             v-model="user.name" required/>
+            <p class="error" v-if="!$v.user.name.minLength">mame must be at least 2 letters!</p>
+
             <input type='email' id="email" name='email' placeholder='E-mail'
             v-model="user.email" required/>
+            <p class="error" v-if="!$v.user.email.email">invalide email input!</p>
+
             <input type='password' id="password" name='password' placeholder='Password'
             v-model="user.password" required/>
+            <p class="error" v-if="!$v.user.password.minLength">password must be at least 6 letters!</p>
+
             <input type='password' id="password2" name='password2' placeholder='Confirm Password'
             v-model="user.password2" required/>
+            <p class="error" v-if="!$v.user.password2.samePassword">password and confirmed password must match!</p>
+
             <input type='submit' value="submit"/>
         </form>
     </div>
@@ -85,6 +93,10 @@ $base-border-color: #E9ECEB;
             width: 100%;
             display: flex;
             flex-direction: column;
+            .error {
+                text-align: center;
+                font-size: 12px;
+            }
             input[type=text],
             input[type=password],
             input[type=email]{
