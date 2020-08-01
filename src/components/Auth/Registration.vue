@@ -1,6 +1,6 @@
 <template>
     <div class="auth-container">
-        <h5>Registration</h5>
+        <h5 class="auth-title">Registration</h5>
         <p class="subtitle">create an account</p>
         <form class="auth-form">
             <input type='text' id="name" name='name' placeholder='Name' />
@@ -12,14 +12,14 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $base-text-color: #FDFF85;
 $base-border-color: #E9ECEB;
 
     .auth-container {
         width: 25%;
         margin: 0 auto;
-        h5 {
+        .auth-title {
             text-align: center;
             font-size: 22px;
             text-transform: uppercase;
