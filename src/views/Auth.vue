@@ -1,15 +1,17 @@
 <template>
     <section>
-        <CheckEmail />
+        <Registration />
     </section>
 </template>
 
 <script>
-import CheckEmail from '../components/Auth/CheckEmail'
+// import CheckEmail from '../components/Auth/CheckEmail'
+// import Login from '../components/Auth/Login'
+import Registration from '../components/Auth/Registration'
 
 export default {
   components: {
-    CheckEmail
+    Registration
   }
 }
 </script>

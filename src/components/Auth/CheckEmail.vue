@@ -4,9 +4,9 @@
         <h5 class="auth-title">Email Validation</h5>
         <p class="subtitle">check, if you already have an account</p>
         <form class="auth-form" @submit.prevent="onSubmitHandler">
-            <input type='email' id="email" name='email' placeholder='E-mail'
-            v-model="user.email" required/>
-            <input type='submit' value="submit"/>
+          <EmailInput :value="user.email" @emailEntry='user.email = $event'
+          :error='!$v.user.email.email' />
+          <input type='submit' value="submit"/>
         </form>
     </div>
 </template>
@@ -14,8 +14,12 @@
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, email } from 'vuelidate/lib/validators'
+import EmailInput from './EmailInput'
 
 export default {
+  components: {
+    EmailInput
+  },
   mixins: [validationMixin],
   data () {
     return {

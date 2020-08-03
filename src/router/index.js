@@ -2,14 +2,14 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home'
-import Registration from '../components/Auth/Registration'
+import Auth from '../views/Auth'
 import Library from '../components/Library/Library'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/auth', name: 'Registration', component: Registration },
+  { path: '/auth', name: 'Auth', component: Auth },
   { path: '/library', name: 'Library', component: Library },
   { path: '*', redirect: '/' }
 ]

@@ -3,11 +3,11 @@
         <h5 class="auth-title">Login</h5>
         <p class="subtitle">enter your credentials</p>
         <form class="auth-form" @submit.prevent="onSubmitHandler">
-            <input type='email' id="email" name='email' placeholder='E-mail'
-            v-model="user.email" required/>
-            <input type='password' id="password" name='password' placeholder='Password'
-            v-model="user.password" required/>
-            <input type='submit' value="submit"/>
+          <EmailInput :value="user.email" @emailEntry='user.email = $event'
+          :error='!$v.user.email.email' />
+          <PasswordInput :value="user.password" @passwordEntry='user.password = $event'
+          :error='!$v.user.password.minLength'/>
+          <input type='submit' value="submit"/>
         </form>
     </div>
 </template>
@@ -15,8 +15,14 @@
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, minLength, email } from 'vuelidate/lib/validators'
+import PasswordInput from './PasswordInput'
+import EmailInput from './EmailInput'
 
 export default {
+  components: {
+    PasswordInput,
+    EmailInput
+  },
   mixins: [validationMixin],
   data () {
     return {
