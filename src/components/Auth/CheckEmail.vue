@@ -17,6 +17,7 @@ import { required, email } from 'vuelidate/lib/validators'
 import EmailInput from './EmailInput'
 
 export default {
+  props: ['checkUser'],
   components: {
     EmailInput
   },
@@ -30,7 +31,7 @@ export default {
   },
   methods: {
     onSubmitHandler (e) {
-      console.log(this.user)
+      this.checkUser(this.user.email)
       e.target.reset()
     }
   },

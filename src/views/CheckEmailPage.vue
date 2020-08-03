@@ -1,6 +1,6 @@
 <template>
     <modal v-if="openModal" :closeModal='closeModal'>
-        <CheckEmail />
+        <CheckEmail :checkUser='checkUser'/>
     </modal>
 </template>
 
@@ -10,9 +10,29 @@ import CheckEmail from '../components/Auth/CheckEmail'
 
 export default {
   props: ['openModal', 'closeModal'],
+  data () {
+    return {
+      result: null,
+      emails: ['mike@mail.bg', 'user@user.com']
+    }
+  },
   components: {
     modal: AuthModal,
     CheckEmail
+  },
+  methods: {
+    checkUser (email) {
+      this.result = this.emails.some(e => e === email)
+      this.redirectTo(this.result)
+      this.closeModal()
+    },
+    redirectTo () {
+      if (this.result) {
+        this.$router.push({ name: 'Auth' })
+      } else {
+        this.$router.push({ name: 'Home' })
+      }
+    }
   }
 }
 </script>
