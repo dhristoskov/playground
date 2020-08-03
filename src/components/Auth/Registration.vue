@@ -53,9 +53,6 @@ export default {
     onSubmitHandler (e) {
       console.log(this.user)
       e.target.reset()
-    },
-    toggleVisibility () {
-      this.unvisible = this.unvisible === 'password' ? 'text' : 'password'
     }
   },
   validations: {

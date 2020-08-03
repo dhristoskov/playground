@@ -9,6 +9,7 @@
           :error='!$v.user.password.minLength'/>
           <input type='submit' value="submit"/>
         </form>
+        <router-link class='psw-question' to='/auth' tag='li'>Forgotten password?</router-link>
     </div>
 </template>
 

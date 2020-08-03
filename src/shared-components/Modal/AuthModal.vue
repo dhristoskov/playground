@@ -33,8 +33,8 @@ export default {
         transform: translate(-50%, -50%);
         p {
             position: fixed;
-            top: 10px;
-            right: 10px;
+            top: 15px;
+            right: 15px;
             color: #FDFF85;
             font-size: 20px;
             cursor: pointer;

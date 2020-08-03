@@ -3,7 +3,7 @@
     <div>
       <Backdrop :closeModal='closeModal'/>
       <div class="modal">
-        <p @click='closeModal'>close</p>
+        <p @click='closeModal'><i class="far fa-times-circle"></i></p>
         <slot></slot>
       </div>
     </div>

@@ -5,8 +5,7 @@
 </template>
 
 <script>
-// import CheckEmail from '../components/Auth/CheckEmail'
-// import Login from '../components/Auth/Login'
+//  import Login from '../components/Auth/Login'
 import Registration from '../components/Auth/Registration'
 
 export default {
