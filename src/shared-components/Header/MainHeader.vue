@@ -28,7 +28,7 @@ export default {
         }
     }
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 460px) {
         .header {
             justify-content: center;
         }

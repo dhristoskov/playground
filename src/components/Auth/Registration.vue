@@ -86,7 +86,7 @@ $base-text-color: #FDFF85;
 $base-border-color: #E9ECEB;
 
     .auth-container {
-        width: 25%;
+        width: 100%;
         margin: 0 auto;
         .auth-title {
             text-align: center;
@@ -170,16 +170,6 @@ $base-border-color: #E9ECEB;
                     color: #172727;
                 }
             }
-        }
-    }
-    @media screen and (max-width: 1024px) {
-        .auth-container {
-            width: 30%;
-        }
-    }
-    @media screen and (max-width: 450px) {
-        .auth-container {
-            width: 80%;
         }
     }
 </style>
