@@ -4,8 +4,8 @@
         <router-link exact to='/' tag='li'><i class="fas fa-home"></i></router-link>
         <!-- <router-link to='/library' tag='li'><i class="fas fa-headphones"></i></router-link> -->
         <li @click="openModalHandler"><i class="fas fa-headphones"></i></li>
-        <router-link to='/account' tag='li'><i class="fas fa-user-alt"></i></router-link>
-        <router-link to='/auth' tag='li'><i class="fas fa-sign-out-alt"></i></router-link>
+        <router-link to='/login' tag='li'><i class="fas fa-user-alt"></i></router-link>
+        <router-link to='/register' tag='li'><i class="fas fa-sign-out-alt"></i></router-link>
     </nav>
 </template>
 

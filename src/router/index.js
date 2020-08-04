@@ -2,14 +2,16 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Home from '../views/Home'
-import Auth from '../views/Auth'
+import RegisterPage from '../views/RegisterPage'
+import LoginPage from '../views/LoginPage'
 import Library from '../components/Library/Library'
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/auth', name: 'Auth', component: Auth },
+  { path: '/register', name: 'Register', component: RegisterPage },
+  { path: '/login', name: 'Login', component: LoginPage },
   { path: '/library', name: 'Library', component: Library },
   //  Redirect unexisting paths
   { path: '*', redirect: '/' }

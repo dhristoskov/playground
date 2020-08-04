@@ -4,7 +4,6 @@
     </div>
 </template>
 
-
 <style lang="scss" scoped>
   .auth-main-section {
     width: 25%;
