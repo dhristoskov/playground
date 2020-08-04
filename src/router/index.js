@@ -11,6 +11,7 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/auth', name: 'Auth', component: Auth },
   { path: '/library', name: 'Library', component: Library },
+  //  Redirect unexisting paths
   { path: '*', redirect: '/' }
 ]
 
