@@ -10,8 +10,8 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/register', name: 'Register', component: RegisterPage },
-  { path: '/login', name: 'Login', component: LoginPage },
+  { path: '/register/:email', name: 'Register', component: RegisterPage },
+  { path: '/login/:email', name: 'Login', component: LoginPage },
   { path: '/library', name: 'Library', component: Library },
   //  Redirect unexisting paths
   { path: '*', redirect: '/' }

@@ -1,6 +1,6 @@
 <template>
-     <auth-layout>
-        <Login />
+    <auth-layout>
+      <Login :parameEmail='parameEmail'/>
     </auth-layout>
 </template>
 
@@ -12,6 +12,11 @@ export default {
   components: {
     Login,
     authLayout: AuthLayout
+  },
+  data () {
+    return {
+      email: this.$route.params.email
+    }
   }
 }
 </script>
