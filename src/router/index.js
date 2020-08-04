@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import RegisterPage from '../views/RegisterPage'
 import LoginPage from '../views/LoginPage'
-import Library from '../components/Library/Library'
+import Library from '../views/Library'
 
 Vue.use(VueRouter)
 
