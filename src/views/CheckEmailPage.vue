@@ -13,6 +13,7 @@ export default {
   data () {
     return {
       result: null,
+      email: '',
       emails: ['mike@mail.bg', 'user@user.com']
     }
   },
@@ -22,6 +23,7 @@ export default {
   },
   methods: {
     checkUser (email) {
+      this.email = email
       this.result = this.emails.some(e => e === email)
       this.redirectTo(this.result)
       this.closeModal()

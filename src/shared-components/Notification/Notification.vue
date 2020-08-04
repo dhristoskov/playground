@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="notification">
+            <p><i class="far fa-times-circle"></i></p>
             <slot></slot>
         </div>
     </div>
