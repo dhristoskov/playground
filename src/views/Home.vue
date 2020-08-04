@@ -1,16 +1,16 @@
 <template>
     <div>
         <p>Home Page</p>
-        <Player />
+        <list />
     </div>
 </template>
 
 <script>
-import Player from '../shared-components/Player/Player'
+import LibraryList from '../components/Library/LibraryList'
 
 export default {
   components: {
-    Player
+    list: LibraryList
   }
 }
 </script>
