@@ -85,6 +85,19 @@ $base-border-color: #E9ECEB;
     .auth-container {
         width: 100%;
         margin: 0 auto;
+        .psw-question{
+          text-align: center;
+          margin-top: 15px;
+          color: $base-text-color;
+          list-style: none;
+          letter-spacing: 1.5px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: all .5s ease-in-out;
+          &:hover {
+              color: $base-border-color;
+            }
+        }
         .auth-title {
             text-align: center;
             font-size: 18px;

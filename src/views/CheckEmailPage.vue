@@ -30,9 +30,9 @@ export default {
     },
     redirectTo () {
       if (this.result) {
-        this.$router.push({ name: 'Auth' })
+        this.$router.push({ name: 'Login' })
       } else {
-        this.$router.push({ name: 'Home' })
+        this.$router.push({ name: 'Register' })
       }
     }
   }
