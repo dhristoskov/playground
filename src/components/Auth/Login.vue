@@ -20,6 +20,7 @@ import PasswordInput from './PasswordInput'
 import EmailInput from './EmailInput'
 
 export default {
+  props: ['paramsEmail'],
   components: {
     PasswordInput,
     EmailInput
@@ -28,7 +29,7 @@ export default {
   data () {
     return {
       user: {
-        email: '',
+        email: '' || this.paramsEmail,
         password: ''
       }
     }

@@ -1,6 +1,6 @@
 <template>
     <auth-layout>
-        <Registration />
+      <Registration :paramsEmail='paramsEmail' />
     </auth-layout>
 </template>
 
@@ -12,6 +12,11 @@ export default {
   components: {
     Registration,
     authLayout: AuthLayout
+  },
+  data () {
+    return {
+      paramsEmail: this.$route.params.email
+    }
   }
 }
 </script>

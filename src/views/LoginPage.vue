@@ -1,6 +1,6 @@
 <template>
     <auth-layout>
-      <Login :parameEmail='parameEmail'/>
+      <Login :paramsEmail='paramsEmail'/>
     </auth-layout>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   },
   data () {
     return {
-      email: this.$route.params.email
+      paramsEmail: this.$route.params.email
     }
   }
 }
