@@ -1,16 +1,11 @@
 <template>
     <div>
-        <list />
+        //TODO
     </div>
 </template>
 
 <script>
-import LibraryList from '../components/Library/LibraryList'
-
 export default {
-  components: {
-    list: LibraryList
-  }
 }
 </script>
 
