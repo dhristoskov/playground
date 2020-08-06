@@ -9,7 +9,7 @@
           :error='!$v.user.password.minLength'/>
           <input type='submit' value="submit"/>
         </form>
-        <router-link class='psw-question' to='/' tag='li'>Forgotten password?</router-link>
+        <p class='psw-question' @click={onPasswordReset}>Forgotten password?</p>
     </div>
 </template>
 
@@ -38,6 +38,9 @@ export default {
     onSubmitHandler (e) {
       console.log(this.user)
       e.target.reset()
+    },
+    onPasswordReset () {
+      this.$router.push({ path: `/reset-password/${this.email}` })
     }
   },
   validations: {
