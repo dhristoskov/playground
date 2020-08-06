@@ -8,16 +8,14 @@
 
 <script>
 import LibraryItem from './LibraryItem'
-import { musicData } from '../../shared-components/data/musicData'
 
 export default {
-  props: ['openSongPlayer'],
+  props: ['openSongPlayer', 'songs'],
   components: {
     item: LibraryItem
   },
   data () {
     return {
-      songs: musicData
     }
   }
 }

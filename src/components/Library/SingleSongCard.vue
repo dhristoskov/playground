@@ -1,12 +1,12 @@
 <template>
     <div class='music-card'>
         <div class="image">
-            <img src="https://m.media-amazon.com/images/I/81fWIB5nfrL._UL600_.jpg" alt="song"/>
+            <img :src="singleSong.img" alt="song"/>
         </div>
         <header>
             <div class='left'>
-                <h1>Daddy Yankee and Luis Fonsi</h1>
-                <h2>Despacito</h2>
+                <h1>{{ singleSong.singer}}</h1>
+                <h2>{{ singleSong.name }}</h2>
             </div>
             <div class='right'>
                 <p class='play'><i class="fas fa-play-circle"></i></p>
@@ -15,6 +15,12 @@
         </header>
     </div>
 </template>
+
+<script>
+export default {
+  props: ['singleSong']
+}
+</script>
 
 <style lang="scss" scoped>
     .music-card {
