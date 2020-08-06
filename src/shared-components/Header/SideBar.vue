@@ -35,7 +35,7 @@ export default {
   .side-bar {
     position: fixed;
     top: 15%;
-    left: 50%;
+    left: 3%;
     display: none;
     flex-direction: column;
     height: 150px;

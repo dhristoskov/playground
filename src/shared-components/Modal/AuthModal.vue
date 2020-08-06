@@ -40,4 +40,14 @@ export default {
             cursor: pointer;
         }
     }
+    @media screen and (max-width: 1024px) {
+      .auth-modal {
+        width: 35%;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .auth-modal {
+        width: 85%;
+      }
+    }
 </style>

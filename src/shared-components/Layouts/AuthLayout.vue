@@ -16,7 +16,7 @@
   }
   @media screen and (max-width: 450px) {
     .auth-main-section {
-      width: 80%;
+      width: 85%;
     }
   }
 </style>

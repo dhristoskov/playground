@@ -1,5 +1,6 @@
 <template>
     <section class='header'>
+        <SideBar />
         <router-link to='/' tag='div'><Logo /></router-link>
         <Navigation />
     </section>
@@ -7,12 +8,14 @@
 
 <script>
 import Navigation from './Navigation'
+import SideBar from './SideBar'
 import Logo from './Logo'
 
 export default {
   components: {
     Navigation,
-    Logo
+    Logo,
+    SideBar
   }
 }
 </script>
