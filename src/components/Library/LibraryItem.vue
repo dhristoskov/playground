@@ -1,6 +1,6 @@
 <template>
   <div class="song-wrapper">
-    <div class="sond-item">
+    <div class="sond-item" @click="openSongPlayer(song.id)">
       <!-- Add photo of every song -->
       <p class="song-name">{{ song.singer }}</p>
       <p class="song-singer"> - {{ song.name }}</p>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  props: ['song']
+  props: ['song', 'openSongPlayer']
 }
 </script>
 
@@ -34,7 +34,7 @@ export default {
     display: flex;
     width: 89%;
     align-items: baseline;
-    //  cursor: pointer; <--to add later
+    cursor: pointer;
     p {
       font-size: 13px;
     }

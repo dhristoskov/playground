@@ -1,7 +1,7 @@
 <template>
     <div class="lib-layout">
         <LibraryNav />
-        <LibraryList />
+        <LibraryList :openSongPlayer='openSongPlayer'/>
     </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   components: {
     LibraryNav,
     LibraryList
+  },
+  methods: {
+    openSongPlayer (sid) {
+      console.log(sid)
+    }
   }
 }
 </script>
