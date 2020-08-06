@@ -13,7 +13,6 @@
       </div>
   </auth-layout>
 </template>
-//  <i class="far fa-arrow-alt-circle-left"></i> -- back arrow
 
 <script>
 import { validationMixin } from 'vuelidate'
@@ -30,9 +29,8 @@ export default {
   mixins: [validationMixin],
   data () {
     return {
-      paramsEmail: this.$route.params.email,
       user: {
-        email: '' || this.paramsEmail
+        email: ''
       }
     }
   },
