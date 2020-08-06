@@ -13,7 +13,7 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/register/:email', name: 'Register', component: RegisterPage },
   { path: '/login/:email', name: 'Login', component: LoginPage },
-  { path: '/reset-password', name: 'Reset', component: Reset },
+  { path: '/reset-password/:email', name: 'Reset', component: Reset },
   { path: '/library', name: 'Library', component: Library },
   //  Redirect unexisting paths
   { path: '*', redirect: '/' }

@@ -8,8 +8,8 @@
             :error='!$v.user.email.email' />
             <input type='submit' value="submit"/>
           </form>
-          <router-link class="back-login" to='/login' tag='div'>
-          <span><i class="far fa-arrow-alt-circle-left"></i></span>Back to Login</router-link>
+          <div class="back-login" @click="backToLogin">
+          <span><i class="far fa-arrow-alt-circle-left"></i></span>Back to Login</div>
       </div>
   </auth-layout>
 </template>
@@ -29,8 +29,9 @@ export default {
   mixins: [validationMixin],
   data () {
     return {
+      paramsEmail: this.$route.params.email,
       user: {
-        email: ''
+        email: '' || this.paramsEmail
       }
     }
   },
@@ -38,6 +39,9 @@ export default {
     onSubmitHandler (e) {
       console.log(this.user)
       e.target.reset()
+    },
+    backToLogin () {
+      this.$router.push({ path: `/login/${this.paramsEmail}` })
     }
   },
   validations: {

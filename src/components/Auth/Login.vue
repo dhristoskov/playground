@@ -40,7 +40,7 @@ export default {
       e.target.reset()
     },
     onPasswordReset () {
-      this.$router.push({ name: 'Reset' })
+      this.$router.push({ path: `/reset-password/${this.paramsEmail}` })
     }
   },
   validations: {
