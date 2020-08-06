@@ -1,4 +1,4 @@
-//CSS logo design
+//Simple CSS logo design
 <template>
     <div class="logo-wrapper">
         <div class="logo">
