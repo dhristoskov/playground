@@ -18,6 +18,6 @@ export default {
         width: 100%;
         height: 100vh;
         background: rgba(253, 255, 133, 0.7);
-        z-index: 30;
+        z-index: 35;
     }
 </style>

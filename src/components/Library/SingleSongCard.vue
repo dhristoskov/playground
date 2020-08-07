@@ -9,7 +9,7 @@
                 <h2>{{ singleSong.name }}</h2>
             </div>
             <div class='right'>
-                <p class='play'><i class="fas fa-play-circle"></i></p>
+                <p class='play' @click="playSong('')"><i class="fas fa-play-circle"></i></p>
                 <p class='pause'><i class="fas fa-pause-circle"></i></p>
             </div>
         </header>
@@ -18,7 +18,15 @@
 
 <script>
 export default {
-  props: ['singleSong']
+  props: ['singleSong'],
+  methods: {
+    playSong (song) {
+      new Audio(song).play()
+    },
+    pauseSong (song) {
+      new Audio(song).pause()
+    }
+  }
 }
 </script>
 

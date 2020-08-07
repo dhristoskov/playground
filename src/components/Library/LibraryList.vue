@@ -24,5 +24,6 @@ export default {
 <style lang="scss" scoped>
   .list-songs {
     width: 40%;
+    margin: 0 auto;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="lib-layout">
-        <LibraryNav />
+        <LibraryNav :songsEntryType='songsEntryType'/>
         <card v-if="singleSong !== null" :singleSong='singleSong' />
         <LibraryList :openSongPlayer='openSongPlayer' :songs='songs'/>
     </div>
@@ -28,6 +28,11 @@ export default {
     //  Get song ID from the list
     openSongPlayer (sid) {
       this.singleSong = this.songs.find(song => song.id === sid)
+    },
+    songsEntryType (type) {
+      //  To be added later
+      const songsArray = this.songs.filter(song => song.label === type)
+      console.log(songsArray)
     }
   }
 }

@@ -4,6 +4,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/41u8nR-7d6L._AA256_.jpg',
     name: 'Head & Heart',
     singer: 'Joel Corry',
+    label: 'new',
     duration: 3.25
   },
   {
@@ -11,6 +12,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/51zsbZVnzaL._AA256_.jpg',
     name: 'Savage Love (Laxed - Siren Beat)',
     singer: 'Jawsh 685 & Jason Derulo',
+    label: 'new',
     duration: 4.05
   },
   {
@@ -18,6 +20,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/41+7zDNL3oL._AA256_.jpg',
     name: 'Rockstar',
     singer: 'Dababy ft. Roddy Ricch',
+    label: 'chart',
     duration: 4.11
   },
   {
@@ -25,6 +28,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/4160i79ZVOL._AA256_.jpg',
     name: 'I Do not Care',
     singer: 'Ed Sheeran & Justin Bieber',
+    label: 'chart',
     duration: 4.46
   },
   {
@@ -32,6 +36,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/61MLzJU25VL._AA256_.jpg',
     name: 'Toosie Slide',
     singer: 'Drake',
+    label: 'new',
     duration: 3.13
   },
   {
@@ -39,6 +44,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/614Zg+jtfrL._AA256_.jpg',
     name: 'Cardigan',
     singer: 'Taylor Swift',
+    label: 'chart',
     duration: 5.17
   },
   {
@@ -46,6 +52,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/41IYYbKlhqL._AA256_.jpg',
     name: 'Watermelon suger',
     singer: 'Harry Styles',
+    label: 'chart',
     duration: 4.21
   },
   {
@@ -53,6 +60,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/614Zg+jtfrL._AA256_.jpg',
     name: 'Exile',
     singer: 'Taylor Swift ft. Bon Iver',
+    label: 'new',
     duration: 3.49
   },
   {
@@ -60,6 +68,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/510WdiclucL._AA256_.jpg',
     name: 'West Ten',
     singer: 'AJ Tracey & Mabel',
+    label: 'chart',
     duration: 4.01
   },
   {
@@ -67,6 +76,7 @@ export const musicData = [
     img: 'https://m.media-amazon.com/images/I/614Zg+jtfrL._AA256_.jpg',
     name: 'The 1',
     singer: 'Taylor Swift',
+    label: 'new',
     duration: 5.07
   }
 ]

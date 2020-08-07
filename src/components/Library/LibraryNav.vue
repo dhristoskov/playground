@@ -1,16 +1,22 @@
 <template>
     <div class="archiv-nav">
-        <p>Whats new?</p>
+        <p @click="songsEntryType('new')">Whats new?</p>
         <p>Trending</p>
         <p>Most Listened</p>
         <p>Our Choice</p>
-        <p>Charts</p>
+        <p @click="songsEntryType('chart')">Charts</p>
         <p>by Styles</p>
         <p>by Country</p>
         <p>by Artist</p>
         <p>Old but gold</p>
     </div>
 </template>
+
+<script>
+export default {
+  props: ['songsEntryType']
+}
+</script>
 
 <style lang="scss" scoped>
     .archiv-nav {
