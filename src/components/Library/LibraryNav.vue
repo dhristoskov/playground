@@ -14,8 +14,8 @@
 
 <style lang="scss" scoped>
     .archiv-nav {
-        position: fixed;
-        right: 2%;
+        position: absolute;
+        right: 1%;
         width: 130px;
         height: 100vh;
         padding: 20px 10px;

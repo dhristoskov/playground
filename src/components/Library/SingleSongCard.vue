@@ -26,7 +26,7 @@ export default {
     .music-card {
         position: relative;
         width: 400px;
-        margin: 20px auto;
+        margin: 0 auto;
         box-shadow: 1px 1px 4px rgba(0,0,0,.2);
         border: 2px solid #FDFF85;
         border-radius: 25px;

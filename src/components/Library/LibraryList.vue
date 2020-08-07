@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="list-songs">
        <item v-for="song in songs"
        :song='song' :key="song.id"
        :openSongPlayer='openSongPlayer'/>
@@ -20,3 +20,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .list-songs {
+    width: 40%;
+  }
+</style>

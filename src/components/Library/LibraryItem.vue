@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 .song-wrapper {
   display: flex;
-  width: 40%;
+  width: 100%;
   justify-content: center;
   margin: 0 auto;
   align-items: center;

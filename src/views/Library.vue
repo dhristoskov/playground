@@ -1,8 +1,8 @@
 <template>
     <div class="lib-layout">
         <LibraryNav />
-        <LibraryList :openSongPlayer='openSongPlayer' :songs='songs'/>
         <card v-if="singleSong !== null" :singleSong='singleSong' />
+        <LibraryList :openSongPlayer='openSongPlayer' :songs='songs'/>
     </div>
 </template>
 
