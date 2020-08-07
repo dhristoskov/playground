@@ -9,14 +9,38 @@
     <div class="buttons">
       <p><i class="fas fa-play-circle"></i></p>
       <!-- this is <i class="fas fa-stop-circle"></i> <-- stop button -->
-      <p><i class="fas fa-plus-circle"></i></p>
+      <p @click="addToMyLibrary"><i class="fas fa-plus-circle"></i></p>
     </div>
+    <Notification v-if="notification">
+        <p>Song <span>{{ song.name }}</span> was added to your library</p>
+    </Notification>
   </div>
 </template>
 
 <script>
+import Notification from '../../shared-components/Notification/Notification'
+
 export default {
-  props: ['song', 'openSongPlayer']
+  data () {
+    return {
+      notification: false
+    }
+  },
+  components: {
+    Notification
+  },
+  props: ['song', 'openSongPlayer'],
+  methods: {
+    addToMyLibrary () {
+      //  Add logic to add song to persons library
+      this.notification = true
+
+      //  Remove Notification window
+      setTimeout(() => {
+        this.notification = false
+      }, 1500)
+    }
+  }
 }
 </script>
 
