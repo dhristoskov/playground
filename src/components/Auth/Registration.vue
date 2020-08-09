@@ -54,7 +54,7 @@ export default {
     onSubmitHandler (e) {
       console.log(this.user)
       e.target.reset()
-      this.$router.push({ name: 'MyLibrary' })
+      this.$router.push({ name: 'MyMusic' })
     }
   },
   validations: {

@@ -6,7 +6,7 @@ import RegisterPage from '../views/RegisterPage'
 import LoginPage from '../views/LoginPage'
 import Library from '../views/Library'
 import Reset from '../components/Auth/ResetPassword'
-import MyLibrary from '../components/MyLibrary/MyLibrary'
+import MyMusic from '../views/MyMusic'
 
 Vue.use(VueRouter)
 
@@ -16,7 +16,7 @@ const routes = [
   { path: '/login/:email', name: 'Login', component: LoginPage },
   { path: '/reset-password/:email', name: 'Reset', component: Reset },
   { path: '/library', name: 'Library', component: Library },
-  { path: '/my-library', name: 'MyLibrary', component: MyLibrary },
+  { path: '/my-music', name: 'MyMusic', component: MyMusic },
   //  Redirect unexisting paths
   { path: '*', redirect: '/' }
 ]
