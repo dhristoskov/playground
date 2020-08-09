@@ -1,6 +1,6 @@
 <template>
     <div class="music-navbar">
-
+        <p><i class="fas fa-compact-disc"></i><span>my music</span></p>
     </div>
 </template>
 
@@ -13,17 +13,23 @@ export default {
 <style lang="scss" scoped>
     .music-navbar {
         position: absolute;
-        top: 15%;
+        top: 16%;
         left: 3%;
-        width: 130px;
+        width: 120px;
         height: 100vh;
         padding: 20px 10px;
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,.3);
         p {
+            display: flex;
+            align-items: center;
             cursor: pointer;
             margin-bottom: 15px;
-            font-size: 14px;
-             transition: all .3s ease-in-out;
+            text-transform: uppercase;
+            font-size: 13px;
+            transition: all .3s ease-in-out;
+            span {
+                margin-left: 5px;
+            }
             &:hover,
             &.active{
                 color: #FDFF85;

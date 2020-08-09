@@ -1,13 +1,13 @@
 <template>
-    <my-music />
+    <music-nav />
 </template>
 
 <script>
-import MyMusic from '../components/MyMusic/MyMusic'
+import MusicNav from '../components/MyMusic/MusicNav'
 
 export default {
   components: {
-    myMusic: MyMusic
+    musicNav: MusicNav
   }
 }
 </script>
