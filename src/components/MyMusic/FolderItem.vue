@@ -15,10 +15,11 @@ export default {
         cursor: pointer;
         margin-bottom: 15px;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 13px;
         transition: all .3s ease-in-out;
         span {
             margin-left: 5px;
+            font-size: 11px;
         }
         &:hover,
         &.active{

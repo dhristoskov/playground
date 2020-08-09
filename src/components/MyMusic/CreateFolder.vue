@@ -14,6 +14,7 @@ import { validationMixin } from 'vuelidate'
 import { required, minLength } from 'vuelidate/lib/validators'
 
 export default {
+  props: ['createNewFolder'],
   mixins: [validationMixin],
   data () {
     return {
@@ -22,7 +23,7 @@ export default {
   },
   methods: {
     onSubmitHandler (e) {
-      console.log(this.newFolder)
+      this.createNewFolder(this.newFolder)
       e.target.reset()
     }
   },

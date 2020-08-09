@@ -1,7 +1,7 @@
 <template>
   <div class="music-layout">
-    <create />
-    <music-nav />
+    <create :createNewFolder='createNewFolder' />
+    <music-nav :folders='folders' />
   </div>
 </template>
 
@@ -13,6 +13,16 @@ export default {
   components: {
     musicNav: MusicNav,
     create: CreateFolder
+  },
+  data () {
+    return {
+      folders: []
+    }
+  },
+  methods: {
+    createNewFolder (name) {
+      this.folders.push({ id: Date.now(), name: name })
+    }
   }
 }
 </script>
