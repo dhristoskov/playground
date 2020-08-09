@@ -21,6 +21,7 @@ export default {
 <style lang="scss" scoped>
     .archiv-nav {
         position: absolute;
+        top: 15%;
         right: 1%;
         width: 130px;
         height: 100vh;

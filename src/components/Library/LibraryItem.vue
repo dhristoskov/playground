@@ -38,7 +38,7 @@ export default {
       //  Remove Notification window
       setTimeout(() => {
         this.notification = false
-      }, 1500)
+      }, 3000)
     }
   }
 }

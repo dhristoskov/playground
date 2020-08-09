@@ -1,5 +1,6 @@
 <template>
     <div class="lib-layout">
+        <SearchBar />
         <LibraryNav :songsEntryType='songsEntryType'/>
         <card v-if="singleSong !== null" :singleSong='singleSong' />
         <LibraryList :openSongPlayer='openSongPlayer' :songs='songs'/>
@@ -7,10 +8,11 @@
 </template>
 
 <script>
+import SingleSongCard from '../components/Library/SingleSongCard'
+import SearchBar from '../components/Library/SearchBar'
 import LibraryNav from '../components/Library/LibraryNav'
 import LibraryList from '../components/Library/LibraryList'
 import { musicData } from '../shared-components/data/musicData'
-import SingleSongCard from '../components/Library/SingleSongCard'
 
 export default {
   data () {
@@ -22,6 +24,7 @@ export default {
   components: {
     LibraryNav,
     LibraryList,
+    SearchBar,
     card: SingleSongCard
   },
   methods: {
