@@ -1,12 +1,22 @@
 <template>
     <div class="music-navbar">
         <p><i class="fas fa-compact-disc"></i><span>my music</span></p>
+        <folder v-for="folder in folders" :folder='folder' :key="folder.id" />
     </div>
 </template>
 
 <script>
+import FolderItem from './FolderItem'
+
 export default {
-  props: ['songsEntryType']
+  components: {
+    folder: FolderItem
+  },
+  data () {
+    return {
+      folders: [{ id: '01', name: 'best' }, { id: '02', name: 'top' }]
+    }
+  }
 }
 </script>
 
@@ -25,7 +35,7 @@ export default {
             cursor: pointer;
             margin-bottom: 15px;
             text-transform: uppercase;
-            font-size: 13px;
+            font-size: 12px;
             transition: all .3s ease-in-out;
             span {
                 margin-left: 5px;
