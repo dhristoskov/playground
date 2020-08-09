@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="music-layout">
     <create />
     <music-nav />
   </div>

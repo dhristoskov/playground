@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
     .music-navbar {
         position: absolute;
-        top: 16%;
+        top: 22%;
         left: 3%;
         width: 120px;
         height: 100vh;
