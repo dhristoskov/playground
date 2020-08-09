@@ -34,14 +34,15 @@ export default {
 <style lang="scss" scoped>
   .side-bar {
     position: fixed;
-    top: 15%;
-    left: 3%;
+    top: 13%;
+    left: 50%;
+    width: 45%;
+    transform: translate(-50%, -50%);
     display: none;
-    flex-direction: column;
     height: 150px;
     justify-content: space-between;
     align-items: center;
-     li {
+    li {
         list-style: none;
         font-size: 18px;
         cursor: pointer;
@@ -54,8 +55,8 @@ export default {
         }
   }
   @media screen and (max-width: 460px) {
-        .side-bar {
-            display: flex;
-        }
+    .side-bar {
+      display: flex;
+    }
   }
 </style>

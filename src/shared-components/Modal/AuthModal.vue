@@ -45,7 +45,7 @@ export default {
         width: 35%;
       }
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 460px) {
       .auth-modal {
         width: 85%;
       }
