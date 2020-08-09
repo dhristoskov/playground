@@ -3,11 +3,11 @@
         <h5 class="auth-title">Login</h5>
         <p class="subtitle">enter your credentials</p>
         <form class="auth-form" @submit.prevent="onSubmitHandler">
-          <EmailInput :value="user.email" @emailEntry='user.email = $event'
+          <EmailInput :value="user.email" @entry='user.email = $event'
           :error='!$v.user.email.email' />
-          <PasswordInput :value="user.password" @passwordEntry='user.password = $event'
+          <PasswordInput :value="user.password" @passwordentry='user.password = $event'
           :error='!$v.user.password.minLength'/>
-          <input type='submit' value="submit"/>
+          <input type='submit' :disabled='$v.$invalid' value="submit"/>
         </form>
         <p class='psw-question' @click='onPasswordReset'>Forgotten password?</p>
     </div>

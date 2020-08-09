@@ -10,9 +10,9 @@
             <p class="error" v-if="!$v.user.name.minLength">
             <span><i class="fas fa-exclamation-circle"></i></span> name must be at least 2 letters!</p>
           </div>
-          <EmailInput :value="user.email" @emailEntry='user.email = $event'
+          <EmailInput :value="user.email" @entry='user.email = $event'
           :error='!$v.user.email.email' />
-          <PasswordInput :value="user.password" @passwordEntry='user.password = $event'
+          <PasswordInput :value="user.password" @passwordentry='user.password = $event'
           :error='!$v.user.password.minLength'/>
           <div class="input-wrapper">
             <p class="ident-icon"><i class="fas fa-lock"></i></p>
@@ -21,7 +21,7 @@
             <p class="error" v-if="!$v.user.password2.samePassword">
             <span><i class="fas fa-exclamation-circle"></i></span>password and confirmed password must match!</p>
           </div>
-          <input type='submit' value="submit"/>
+          <input type='submit' :disabled='$v.$invalid' value="submit"/>
         </form>
     </div>
 </template>

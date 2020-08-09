@@ -4,9 +4,9 @@
         <h5 class="auth-title">Email Validation</h5>
         <p class="subtitle">check, if you already have an account</p>
         <form class="auth-form" @submit.prevent="onSubmitHandler">
-          <EmailInput :value="user.email" @emailEntry='user.email = $event'
+          <EmailInput :value="user.email" @entry='user.email = $event'
           :error='!$v.user.email.email' />
-          <input type='submit' value="submit"/>
+          <input type='submit' :disabled='$v.$invalid' value="submit"/>
         </form>
     </div>
 </template>

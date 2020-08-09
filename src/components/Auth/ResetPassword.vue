@@ -4,9 +4,9 @@
           <h5 class="auth-title">Reset password</h5>
           <p class="subtitle">we will send you reset link per e-mail</p>
           <form class="auth-form" @submit.prevent="onSubmitHandler">
-            <EmailInput :value="user.email" @emailEntry='user.email = $event'
+            <EmailInput :value="user.email" @entry='user.email = $event'
             :error='!$v.user.email.email' />
-            <input type='submit' value="submit"/>
+            <input type='submit' :disabled='$v.$invalid' value="submit"/>
           </form>
           <div class="back-login" @click="backToLogin">
           <span><i class="far fa-arrow-alt-circle-left"></i></span>Back to Login</div>

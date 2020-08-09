@@ -2,7 +2,7 @@
     <div class="input-wrapper">
         <p class="ident-icon"><i class="fas fa-lock"></i></p>
         <input :type='unvisible' id='password' name='password' placeholder='Password'
-        :value="value" @input="$emit('passwordEntry', $event.target.value)" required/>
+        :value="value" @input="$emit('passwordentry', $event.target.value)" required/>
         <p class="visibility" @click="toggleVisibility">
             <span v-if="unvisible==='password'">show</span>
             <span v-else>hide</span>
