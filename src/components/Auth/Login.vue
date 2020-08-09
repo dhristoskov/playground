@@ -38,6 +38,7 @@ export default {
     onSubmitHandler (e) {
       console.log(this.user)
       e.target.reset()
+      this.$router.push({ name: 'MyLibrary' })
     },
     onPasswordReset () {
       this.$router.push({ path: `/reset-password/${this.paramsEmail}` })
