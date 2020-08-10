@@ -81,7 +81,7 @@ export default {
     justify-content: space-around;
     p {
       cursor: pointer;
-      font-size: 16px;
+      font-size: 13px;
       transition: all .4s ease-in-out;
       &:hover{
         color: #FDFF85;

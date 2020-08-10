@@ -25,7 +25,8 @@ export default new Vuex.Store({
       return state.myMusic
     },
     removeSong: (state, payload) => {
-      return state.myMusic.filter(song => song.id !== payload.id)
+      state.myMusic = state.myMusic.filter(song => song.id !== payload)
+      return state.myMusic
     }
   },
   actions: {

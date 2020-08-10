@@ -19,7 +19,7 @@ export default {
         display: flex;
         align-items: center;
         cursor: pointer;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         font-size: 13px;
         transition: all .3s ease-in-out;

@@ -1,10 +1,10 @@
 <template>
     <div>
         <form class="folder-form" @submit.prevent="onSubmitHandler">
-            <input type="text" name='newFolder' v-model="newFolder" @blur="$v.newFolder.$touch()" placeholder='Create folder' required>
+            <input type="text" name='newFolder' v-model="newFolder" @blur="$v.newFolder.$touch()" placeholder='Add folder' required>
             <p class="error" v-if="!$v.newFolder.minLength">
             <span><i class="fas fa-exclamation-circle"></i></span>folder name must be at least 2 letters!</p>
-            <input type="submit" value="add">
+            <input type="submit" value="+">
         </form>
     </div>
 </template>
@@ -41,12 +41,13 @@ $base-border-color: #E9ECEB;
 
     .folder-form{
         position: absolute;
-        top: 12%;
-        left: 3%;
+        top: 1%;
+        left: 1%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: baseline;
-        width: 15%;
+        width: 100%;
+        padding: 0 6px;
         .error {
             position: fixed;
             font-size: 12px;
@@ -57,8 +58,8 @@ $base-border-color: #E9ECEB;
             }
         }
         input[type=text]{
-            width: 74%;
-            padding: 20px 15px 5px 5px;
+            width: 86%;
+            padding: 10px 5px 5px 5px;
             border: none;
             outline: none;
             color: $base-border-color;
@@ -66,21 +67,17 @@ $base-border-color: #E9ECEB;
             background-color: transparent;
         }
         input[type=submit]{
-            width: 25%;
-            padding: 5px;
+            width: 13%;
             outline: none;
-            text-transform: uppercase;
-            font-size: 11px;
+            font-size: 20px;
+            font-weight:700;
             cursor: pointer;
             background-color: transparent;
+            border: none;
             color: $base-text-color;
-            border: 1px solid $base-text-color;
-            letter-spacing: 1px;
-            border-radius: 30px;
             transition: all .3s ease-in-out;
             &:hover {
-                background-color: $base-text-color;
-                color: #172727;
+                color: $base-border-color;
             }
         }
         input::placeholder {

@@ -5,12 +5,22 @@
       <p class="song-singer"> - {{ song.name }}</p>
       <p class="duration">{{ song.duration }} s.</p>
     </div>
+     <div class="buttons">
+      <p><i class="fas fa-play-circle"></i></p>
+      <p @click="removeSong(song.id)"><i class="fas fa-minus-circle"></i></p>
+      <p><i class="fas fa-shopping-cart"></i></p>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['song']
+  props: ['song'],
+  methods: {
+    removeSong (id) {
+      this.$store.commit('removeSong', id)
+    }
+  }
 }
 </script>
 
@@ -26,7 +36,7 @@ export default {
   padding: 5px 2px;
   .sond-item {
     display: flex;
-    width: 89%;
+    width: 86%;
     align-items: baseline;
     cursor: pointer;
     p {
@@ -41,6 +51,19 @@ export default {
       margin-left: 10px;
       font-size: 10px;
       color: #FDFF85;
+    }
+  }
+  .buttons {
+    width: 13%;
+    display: flex;
+    justify-content: space-around;
+    p {
+      cursor: pointer;
+      font-size: 13px;
+      transition: all .4s ease-in-out;
+      &:hover{
+        color: #FDFF85;
+      }
     }
   }
 }
