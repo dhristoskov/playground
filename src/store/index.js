@@ -8,6 +8,10 @@ export default new Vuex.Store({
     folders: []
   },
   mutations: {
+    //  Folders mutation
+    add: (state, payload) => {
+      state.folders.push({ id: Date.now(), name: payload })
+    }
   },
   actions: {
   },
