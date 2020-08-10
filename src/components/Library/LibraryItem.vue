@@ -33,13 +33,14 @@ export default {
   methods: {
     addToMyLibrary () {
       //  Add logic to add song to persons library
-      this.notification = true
-      this.$store.commit('addSong', this.song)
-
-      //  Remove Notification window
-      setTimeout(() => {
-        this.notification = false
-      }, 3000)
+      if (!this.$store.state.myMusic.includes(this.song)) {
+        this.notification = true
+        this.$store.commit('addSong', this.song)
+        //  Remove Notification window
+        setTimeout(() => {
+          this.notification = false
+        }, 3000)
+      }
     }
   }
 }
