@@ -23,7 +23,6 @@ export default {
   methods: {
     onSubmitHandler (e) {
       this.$store.commit('add', this.newFolder)
-      //  this.$store.state.folders.push({ id: Date.now(), name: this.newFolder })
       e.target.reset()
     }
   },

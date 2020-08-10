@@ -15,7 +15,10 @@ export default new Vuex.Store({
     },
     //  My Music mutation
     addSong: (state, payload) => {
-      state.myMusic.push({ id: Date.now(), song: payload })
+      state.myMusic.push(payload)
+    },
+    removeSong: (state, payload) => {
+      state.myMusic.filter(song => song.id !== payload.id)
     }
   },
   actions: {

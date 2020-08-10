@@ -10,7 +10,7 @@ import SongItem from './SongItem'
 
 export default {
   computed: {
-    folders () {
+    myMusic () {
       return this.$store.state.myMusic
     }
   },
