@@ -5,7 +5,7 @@
             :song='song' :key="song.id"/>
        </span>
        <span v-else>
-           <p class="empty-list">Your music Library is empty</p>
+           <p class="empty-list">Your music Library is still empty !!!</p>
        </span>
    </div>
 </template>
