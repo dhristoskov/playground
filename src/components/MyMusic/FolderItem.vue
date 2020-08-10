@@ -1,10 +1,16 @@
 <template>
-    <p><i class="fas fa-compact-disc"></i><span>{{ folder.name }}</span></p>
+    <p><i class="fas fa-compact-disc"></i><span>{{ folder.name }}</span><span @click="removeFolder(folder.id)">
+        <i class="fas fa-minus"></i></span></p>
 </template>
 
 <script>
 export default {
-  props: ['folder']
+  props: ['folder'],
+  methods: {
+    removeFolder (id) {
+      this.$store.commit('removeFolder', id)
+    }
+  }
 }
 </script>
 

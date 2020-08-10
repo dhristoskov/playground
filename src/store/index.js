@@ -11,14 +11,18 @@ export default new Vuex.Store({
   mutations: {
     //  Folders mutation
     add: (state, payload) => {
-      state.folders.push({ id: Date.now(), name: payload })
+      return state.folders.push({ id: Date.now(), name: payload })
+    },
+    removeFolder: (state, payload) => {
+      state.folders = state.folders.filter(item => item.id !== payload)
+      return state.folders
     },
     //  My Music mutation
     addSong: (state, payload) => {
-      state.myMusic.push(payload)
+      return state.myMusic.push(payload)
     },
     removeSong: (state, payload) => {
-      state.myMusic.filter(song => song.id !== payload.id)
+      return state.myMusic.filter(song => song.id !== payload.id)
     }
   },
   actions: {
