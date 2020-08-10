@@ -1,6 +1,5 @@
 <template>
     <div class="music-navbar">
-        <p><i class="fas fa-compact-disc"></i><span>my music</span></p>
         <folder v-for="folder in folders" :folder='folder' :key="folder.id" />
     </div>
 </template>

@@ -4,7 +4,7 @@
             <input type="text" name='newFolder' v-model="newFolder" @blur="$v.newFolder.$touch()" placeholder='Create folder' required>
             <p class="error" v-if="!$v.newFolder.minLength">
             <span><i class="fas fa-exclamation-circle"></i></span>folder name must be at least 2 letters!</p>
-            <input type="submit" value="create">
+            <input type="submit" value="add">
         </form>
     </div>
 </template>
@@ -57,7 +57,7 @@ $base-border-color: #E9ECEB;
             }
         }
         input[type=text]{
-            width: 64%;
+            width: 74%;
             padding: 20px 15px 5px 5px;
             border: none;
             outline: none;
@@ -66,7 +66,7 @@ $base-border-color: #E9ECEB;
             background-color: transparent;
         }
         input[type=submit]{
-            width: 35%;
+            width: 25%;
             padding: 5px;
             outline: none;
             text-transform: uppercase;
