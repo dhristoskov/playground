@@ -1,18 +1,21 @@
 <template>
    <div class="list-songs">
-       <item v-for="song in songs"
-       :song='song' :key="song.id"
-       :openSongPlayer='openSongPlayer'/>
+       <item v-for="song in myMusic"
+       :song='song' :key="song.id"/>
    </div>
 </template>
 
 <script>
-import LibraryItem from './LibraryItem'
+import SongItem from './SongItem'
 
 export default {
-  props: ['openSongPlayer', 'songs'],
+  computed: {
+    folders () {
+      return this.$store.state.myMusic
+    }
+  },
   components: {
-    item: LibraryItem
+    item: SongItem
   }
 }
 </script>

@@ -34,6 +34,7 @@ export default {
     addToMyLibrary () {
       //  Add logic to add song to persons library
       this.notification = true
+      this.$store.commit('addSong', this.song)
 
       //  Remove Notification window
       setTimeout(() => {
