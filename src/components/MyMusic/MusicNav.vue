@@ -9,13 +9,14 @@
 import FolderItem from './FolderItem'
 
 export default {
-  props: ['folders'],
+// Computed prop to show folder state
+  computed: {
+    folders () {
+      return this.$store.state.folders
+    }
+  },
   components: {
     folder: FolderItem
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>
