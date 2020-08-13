@@ -1,3 +1,3 @@
-Learning more about VUE, Vue-Router, VUEX
+Learning more about vue.js, Vue-Router, VUEX
 
-simple front-end tasks to understand VUE framework
+simple front-end tasks to understand vue.js framework
