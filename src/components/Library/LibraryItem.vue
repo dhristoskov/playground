@@ -32,11 +32,10 @@ export default {
   props: ['song', 'openSongPlayer'],
   methods: {
     addToMyLibrary () {
-      //  Add logic to add song to persons library
       if (!this.$store.state.myMusic.includes(this.song)) {
         this.notification = true
         this.$store.commit('addSong', this.song)
-        //  Remove Notification window
+        //  Remove Notification window after 3s
         setTimeout(() => {
           this.notification = false
         }, 3000)

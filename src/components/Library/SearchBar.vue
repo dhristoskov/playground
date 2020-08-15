@@ -20,6 +20,7 @@ export default {
       console.log(this.search)
       e.target.reset()
     }
+    // Search loginc to be added
   }
 }
 </script>
