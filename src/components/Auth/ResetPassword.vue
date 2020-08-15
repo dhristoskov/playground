@@ -40,6 +40,7 @@ export default {
       console.log(this.user)
       e.target.reset()
     },
+    // Move back to login page
     backToLogin () {
       this.$router.push({ path: `/login/${this.paramsEmail}` })
     }

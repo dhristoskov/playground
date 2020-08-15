@@ -22,6 +22,7 @@ export default {
     }
   },
   methods: {
+    //  Toggle visibility between text and password (show password text when it is text field)
     toggleVisibility () {
       this.unvisible = this.unvisible === 'password' ? 'text' : 'password'
     }
