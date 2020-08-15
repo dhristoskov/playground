@@ -1,3 +1,4 @@
+//  Simple E-mail input field
 <template>
     <div class="input-wrapper">
         <p class="ident-icon"><i class="fas fa-at"></i></p>
