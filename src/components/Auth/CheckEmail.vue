@@ -1,4 +1,4 @@
-//Checking email if user already exist
+//Checking email if user already exist (make only true or false request to db)
 <template>
     <div class="auth-container">
         <h5 class="auth-title">Email Validation</h5>
