@@ -40,6 +40,7 @@ export default {
       e.target.reset()
       this.$router.push({ name: 'MyMusic' })
     },
+    //  Move to reset Passowrd page
     onPasswordReset () {
       this.$router.push({ path: `/reset-password/${this.paramsEmail}` })
     }
