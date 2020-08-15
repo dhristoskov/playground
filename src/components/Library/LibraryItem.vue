@@ -8,7 +8,7 @@
     </div>
     <div class="buttons">
       <p><i class="fas fa-play-circle"></i></p>
-      <!-- this is <i class="fas fa-stop-circle"></i> <-- stop button -->
+      <!-- this is <i class="fas fa-stop-circle"></i> <-- stop button change on play-->
       <p @click="addToMyLibrary"><i class="fas fa-plus-circle"></i></p>
     </div>
     <Notification v-if="notification">
